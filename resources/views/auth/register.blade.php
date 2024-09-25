@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'BigBrew-Register')
+@section('title', 'BigBrew - Register')
 
 @section('content')
 
@@ -9,6 +9,7 @@
         <div class="col-lg-5">
             <div class="form-container-register">
                 <h3 class="text-center font-weight-light my-4 register-heading">Register</h3>
+
                 <form method="POST" action="{{ url('/register') }}">
                     @csrf
                     <div>
@@ -36,20 +37,21 @@
 
                 <!-- Show Validation Errors -->
                 @if ($errors->any())
-                    <div class="alert alert-danger">
+                    <div class="alert alert-danger mt-4">
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                </div>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
-    @endsection
+</div>
 
-    @section('footer')
-        <x-footer />
-    @endsection
+@endsection
+
+@section('footer')
+    <x-footer />
+@endsection
