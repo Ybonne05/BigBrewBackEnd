@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
+<<<<<<< HEAD
 @section('title', 'BigBrew - Register')
+=======
+@section('title', 'BigBrew-Register')
+>>>>>>> 04fe654d8fb9882ad8e01070e6e12caf6971cc65
 
 @section('content')
 
@@ -9,7 +13,10 @@
         <div class="col-lg-5">
             <div class="form-container-register">
                 <h3 class="text-center font-weight-light my-4 register-heading">Register</h3>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04fe654d8fb9882ad8e01070e6e12caf6971cc65
                 <form method="POST" action="{{ url('/register') }}">
                     @csrf
                     <div>
@@ -37,6 +44,7 @@
 
                 <!-- Show Validation Errors -->
                 @if ($errors->any())
+<<<<<<< HEAD
                     <div class="alert alert-danger mt-4">
                         <ul>
                             @foreach ($errors->all() as $error)
@@ -55,3 +63,22 @@
 @section('footer')
     <x-footer />
 @endsection
+=======
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </div>
+    @endsection
+
+    @section('footer')
+        <x-footer />
+    @endsection
+>>>>>>> 04fe654d8fb9882ad8e01070e6e12caf6971cc65

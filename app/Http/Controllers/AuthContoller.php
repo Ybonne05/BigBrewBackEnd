@@ -1,8 +1,15 @@
 <?php
 
+<<<<<<< HEAD
 namespace App\Http\Controllers;
 
 //App/Http/Controllers/AuthController.php
+=======
+// app/Http/Controllers/AuthController.php
+
+namespace App\Http\Controllers;
+
+>>>>>>> 04fe654d8fb9882ad8e01070e6e12caf6971cc65
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
